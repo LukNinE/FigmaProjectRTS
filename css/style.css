@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Inter:wght@100..900&display=swap');
+
+body {
+    margin: 0;
+}
+
+* {
+    font-family: 'inter', sans-serif;
+}
+
+.section {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+}
+
+#main {
+    background-image: url('/img/bgMAIN.png');
+}
+
+#about{
+    background-image: url('/img/bgABOUT.png');
+ }
+
+#skills{
+    background-image: url('/img/bgSKILLS.png');
+}
+
+#works{
+    background-image: url('/img/bgWORKS.png');
+}
+
+#comments{
+    background-image: url('/img/bgCOMMENTS.png');
+}
+
+.main-block, .about-block, .skills-block, .works-block, .comments-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+}
+
+.main-block {
+    flex-direction: column;
+    height: 100vh;
+}
+
+.block-img {
+    width: 600px;
+    height: 116px;
+}
+
+.main-content {
+    width: 849px;
+    height: 223px;
+    background-image: url('/img/form1.png');
+    background-repeat: no-repeat;
+    padding-left: 20px;
+}
+
+.main-title {
+    color: #2B2D35;
+    font-size: 80px;
+    margin: 70px 0 0; 
+}
+
+.main-subtitle {
+    font-family: 'inter', sans-serif;
+    color: #2B2D35;
+    font-size: 20px;
+    margin: 0;
+    font-weight: 700;
+}
+
+.button{
+    width: 200px;
+    height: 60px;
+    border-radius: 100px;
+    border: 2px solid #000;
+    background: #BBFF2C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 0 #000000;
+    margin-top: 20px;
+}
+
+.button a {
+    font-family: 'inter', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 700;
+    }
+
+.moving-planet {
+    background: url('/img/moving-planet.png');
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 230px;
+    transform: rotate(-15deh);
+    position: absolute;
+    bottom: 0;
+    left: 200px;
+    animation-name: planet;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes planet {
+    from{transform: translateY(0px);}
+    to{transform: translateY(70px);}
+}
+
+.title{
+    padding-top: 100px;
+    text-align: center;
+    color: #FFF;
+    font-size: 80px;
+    text-shadow: 5px 5px 0 #000000;
+    margin: 0;
+ }
+
+.about-content{
+    width: 894px;
+    height: 298px;
+    background: #792AFF;
+    position: relative;
+    display: flex;
+    border-radius: 10px;
+}
+
+
+.about-title{
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 700;
+    max-width: 463px;
+    margin-bottom: 20px;
+    font-family: 'Comfortaa';
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.about-content .button {
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+.about-card{
+    background-image: url('/img/form2.png');
+    background-repeat: no-repeat;
+    width: 376px;
+    height: 346px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    position: relative;
+    top: -25px;
+    left: 30px;
+}
+
+.about-card img {
+    margin-bottom: 20px;
+}
+
+.about-card b {
+    font-weight: 700;
+}
+
+.about-card p{
+    color: #000;
+    font-size: 17px;
+    align-self: start;
+    padding-left: 20px;
+    line-height: 25px;
+    font-family: 'Comfortaa';
+    margin: 0;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.skills-card {
+    background-image: url('/img/form3.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 638px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    margin: 20px;
+    padding-left: 10px;
+}
+
+.skills-card p{
+    color: #000;
+    font-size: 20px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    text-align: center;
+    max-width: 600px;
+    font-family: 'Comfortaa';
+    font-weight: 900;
+}
+
+.skills-title {
+    padding-top: 100px;
+    text-align: center;
+    color: #FFF;
+    font-size: 80px;
+    text-shadow: 5px 5px 0 #000000;
+    margin: 0; 
+}
+
+.skills-block .button {
+    width: 290px;
+    height: 60px;
+    margin-top: 30px;
+}
+
+.moving-planet-second {
+    background: url('/img/moving-planet2.png');
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 230px;
+    transform: rotate(-15deh);
+    position: absolute;
+    bottom: -1500px;
+    animation-name: planet;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.skills-block {
+    position: relative;
+}
+
+.work-title {
+    padding-top: 100px;
+    text-align: center;
+    color: #FFF;
+    font-size: 80px;
+    text-shadow: 5px 5px 0 #000000;
+    margin: 0; 
+}
+
+.work-card {
+    display: flex;
+    width: 1280px;
+    justify-content: space-between;
+}
+
+.work-card img {
+    width: 408px;
+    height: 275px;
+    box-shadow: 7px 7px 0 #000000;
+}
+
+.com-title {
+    padding-top: 100px;
+    text-align: center;
+    color: #FFF;
+    font-size: 80px;
+    text-shadow: 5px 5px 0 #000000;
+    margin: 0; 
+}
+
+.comments-block {
+    justify-content: space-evenly;
+    max-width: 1150px;
+    margin: auto;
+}
+
+.com-card {
+    background-image: url('/img/card.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 200px;
+}
+
+.com-card h3 {
+    font-size: 18px;
+    font-family: 'Comfortaa';
+    padding: 10px;
+    margin: 0;
+}
+
+.com-card p {
+    font-size: 14px;
+    font-family: 'Comfortaa';
+    padding: 10px 20px;
+    text-align: center;
+    margin: 0;
+}
+
+.comment p{
+    margin: 30px;
+}
+
+.comment {
+    background-color: #FFFFFF;
+    width: 300px;
+    height: 156px;
+    box-shadow: 5px 5px 0 #BBFF2C;
+    border-radius: 10px;
+}
+
+footer{
+    background-color: #200153;
+    height: 110px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #FFF;
+}
+ 
+.footer-info p{
+    font-family: 'Comfortaa';
+    padding-bottom: 10px;
+    margin: 0;
+}
+ 
+.footer-year p{
+    font-family: 'Comfortaa';
+    letter-spacing: 1.5px;
+}
+ 
+.footer-links a{
+    margin-right: 15px;
+    text-decoration: none;
+}
