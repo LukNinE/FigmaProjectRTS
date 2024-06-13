@@ -7,6 +7,7 @@ body {
 
 * {
     font-family: 'inter', sans-serif;
+    scroll-behavior: smooth;
 }
 
 .section {
@@ -96,6 +97,10 @@ body {
     color: #000000;
     font-weight: 700;
     }
+
+.button:hover {
+     background-color: #6fff00;
+}
 
 .moving-planet {
     background: url('/img/moving-planet.png');
@@ -344,4 +349,179 @@ footer{
 .footer-links a{
     margin-right: 15px;
     text-decoration: none;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+.fixed-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    padding-right: 150px;
+}
+
+.logo {
+    color: #BBFF2C;
+    font-size: 80px;
+    padding-left: 50px;
+    margin: 0;
+}
+
+.nav-link{
+    width: 112px;
+    height: 40px;
+    border-radius: 12px;
+    border: 2px solid #000;
+    background-color: #FFF;
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    font-family: 'Comfortaa';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+ 
+
+.active {
+    background-color: #BBFF2C;
+    transform: scale(1.2);
+}
+
+
+@media (max-width: 1000px) {
+    .nav-links {
+        display: none;
+    }
+
+    .logo {
+        font-size: 40px;
+        padding-left: 20px;
+        padding-top: 10px;
+    }
+
+    .main-content {
+        max-width: 320px;
+        border-radius: 10px;
+    }
+
+    .main-title {
+        padding-top: 30px;
+        font-size: 30px;
+    }
+
+    .main-subtitle {
+        font-size: 15px;
+    }
+
+    .planet, .moving-planet, .moving-planet-second {
+        display: none;
+    }
+
+    .title {
+        font-size: 50px;
+        padding-top: 30px;
+    }
+
+    .about-block {
+        flex-direction: column;
+        margin-top: 20px;
+        margin: 0;
+    }
+
+    .about-card {
+        order: -1;
+        padding-top: 20px;
+        width: 350px;
+        height: 296px;
+        border-radius: 10px;
+    }
+
+    .about-card img {
+        width: 85%;
+    }
+
+    .about-content {
+        width: 75%;
+        height: 250px;
+        margin-bottom: 20px;
+    }
+
+    .about-title {
+        font-size: 18px;
+    }
+
+    .block-img {
+        width: 125px;
+        height: 116px;
+    }
+
+    .skills-card {
+        margin: 20px;
+        padding-left: 10px;
+        background-size: contain;
+    }
+
+    .skills-card p {
+        font-size: 16px;
+        margin-top: 15%;
+        margin-bottom: 20px;
+    }
+
+    .skills-card .button {
+        position: absolute;
+        bottom: 50px;
+    }
+
+    .works-card{
+        display: flex;
+        flex-direction: column;
+        padding: 20px 0;
+    }
+
+    .works-block img {
+        margin: 20px 0;
+        width: 80%;
+    }
+
+    .comments-block {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin: 0 auto;
+        padding-top: 30px;
+        min-height: 930px;
+    }
+
+    .comment {
+        background-image: url("/img/comment-mobile.png");
+        background-repeat: no-repeat;
+        width: 300px;
+        height: 120px;
+        margin-top: 15px;
+        /* border: 2px solid black; */
+    }
+
+    .comment p {
+        font-size: 15px;
+        max-width: 290px;
+    }
+
+    .com-card {
+        margin-top: 15px;
+    }
+
+    footer {
+        height: 100px;
+    }
 }
