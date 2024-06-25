@@ -24,6 +24,7 @@ body {
 
 #about{
     background-image: url('/img/bgABOUT.png');
+    background-size: cover;
  }
 
 #skills{
@@ -60,12 +61,12 @@ body {
     height: 223px;
     background-image: url('/img/form1.png');
     background-repeat: no-repeat;
-    padding-left: 20px;
+    padding-left: 10px;
 }
 
 .main-title {
     color: #2B2D35;
-    font-size: 80px;
+    font-size: 70px;
     margin: 70px 0 0; 
 }
 
@@ -269,6 +270,7 @@ body {
     width: 408px;
     height: 275px;
     box-shadow: 7px 7px 0 #000000;
+    border-radius: 5px;
 }
 
 .com-title {
@@ -319,9 +321,12 @@ body {
 }
 
 .comment {
-    background-color: #FFFFFF;
+    background-image: url('/img/comment.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     width: 300px;
-    height: 156px;
+    height: 148px;
     box-shadow: 5px 5px 0 #BBFF2C;
     border-radius: 10px;
 }
@@ -398,6 +403,49 @@ nav {
     transform: scale(1.2);
 }
 
+.mobile-button {
+    display: none;
+    padding-top: 10px;
+    width: 40px;
+    position: absolute;
+    right: 20px;
+}
+
+.hide {
+    display: none;
+}
+
+.mobile-menu {
+    position: absolute;
+    background-color: #200153;
+    top: 0;    
+    z-index: -1;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.mobile-nav-links .nav-link {
+    margin: 0;
+    width: 210px;
+    height: 50px;
+    font-size: 30px;
+    margin-top: 25px;
+}
+
+.mobile-nav-links   {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    min-height: 953px;
+
+}
+
+.off-scroll {
+    overflow: hidden;
+}
+
 
 @media (max-width: 1000px) {
     .nav-links {
@@ -411,13 +459,15 @@ nav {
     }
 
     .main-content {
+        text-align: center;
         max-width: 320px;
         border-radius: 10px;
+        padding: 0;
     }
 
     .main-title {
-        padding-top: 30px;
-        font-size: 30px;
+        padding-top: 10px;
+        font-size: 40px;
     }
 
     .main-subtitle {
@@ -483,10 +533,12 @@ nav {
         bottom: 50px;
     }
 
-    .works-card{
+    .work-card{
         display: flex;
         flex-direction: column;
+        width: 80%;
         padding: 20px 0;
+        align-items: center;
     }
 
     .works-block img {
@@ -506,15 +558,21 @@ nav {
     .comment {
         background-image: url("/img/comment-mobile.png");
         background-repeat: no-repeat;
-        width: 300px;
-        height: 120px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        text-align: center;
+        width: 520px;
+        height: 110px;
         margin-top: 15px;
-        /* border: 2px solid black; */
     }
 
     .comment p {
         font-size: 15px;
         max-width: 290px;
+        margin: 25px 20px;
+        margin: auto;
+       margin-top: 15px;
     }
 
     .com-card {
@@ -523,5 +581,9 @@ nav {
 
     footer {
         height: 100px;
+    }
+
+    .mobile-button {
+        display: block;
     }
 }
